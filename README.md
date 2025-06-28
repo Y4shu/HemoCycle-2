@@ -43,7 +43,7 @@ HemoCycle uses image processing to analyze the inner eyelid and detect signs of 
 ## 🧠 Tech Stack
 
 ### Frontend
-- Flutter *(Cross-platform mobile development)*
+- Flutter
 
 ### Model (ML)
 - TensorFlow *(CNN-based model for eyelid image classification)*

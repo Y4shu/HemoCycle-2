@@ -70,7 +70,7 @@ HemoCycle uses image processing to analyze the inner eyelid and detect signs of 
 
 ## 👥 Team Pandamonium
 
-- [Samiksha Agarwal](https://github.com/Technomad04)  
+- [Samiksha Agarwal](https://github.com/Technomad04) - Team Leader 
 - [Gargi Kalia](https://github.com/Kaliagargi)  
 - [Yashasvi Jain](https://github.com/Y4shu)  
 

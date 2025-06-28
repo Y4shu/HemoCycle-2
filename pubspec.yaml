@@ -7,7 +7,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   shimmer: ^3.0.0
   lottie: ^2.7.0
 
@@ -27,9 +26,9 @@ flutter:
   assets:
     - assets/animation/500.json
     - assets/animation/Animation - 1750950749357.json
-    - assets/WhatsApp Video 2025-06-15 at 13.16.02.mp4
     - assets/animation/Main Scene.json
     - assets/animation/Main Scene1.json
+    - assets/images/avatar.png
 
   fonts:
     - family: DancingScript

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'homepage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen>
-       with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
 
@@ -25,20 +25,15 @@ class _SplashScreenState extends State<SplashScreen>
     _scaleAnimation = Tween<double>(begin: 0.5, end: 1.1).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     );
+
     _controller.forward();
-    Future.delayed(const Duration(seconds: 4), () {
-      Navigator.pushReplacement(
-        context,
-        PageRouteBuilder(
-          transitionDuration: const Duration(milliseconds: 600),
-          pageBuilder: (_, __, ___) => const HomePage(),
-          transitionsBuilder: (_, animation, __, child) {
-            return FadeTransition(opacity: animation, child: child);
-          },
-        ),
-      );
+
+    // After 3 seconds, go to NavigationController
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/home');
     });
   }
+
   @override
   void dispose() {
     _controller.dispose();
@@ -58,17 +53,12 @@ class _SplashScreenState extends State<SplashScreen>
           Center(
             child: ScaleTransition(
               scale: _scaleAnimation,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Positioned(
-                  top: 500,
-                  child: Lottie.asset('assets/animation/Main Scene1.json'),
-                ),
-
-                Positioned(
-                  top: 500,
-                  child: Text(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Lottie.asset('assets/animation/Main Scene1.json', height: 150),
+                  const SizedBox(height: 20),
+                  Text(
                     'HemoCycle',
                     style: TextStyle(
                       fontSize: 48,
@@ -79,15 +69,14 @@ class _SplashScreenState extends State<SplashScreen>
                         Shadow(
                           blurRadius: 20,
                           color: Colors.pink.withOpacity(0.7),
-                          offset: Offset(0, 0),
+                          offset: const Offset(0, 0),
                         ),
                       ],
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
           ),
         ],
       ),

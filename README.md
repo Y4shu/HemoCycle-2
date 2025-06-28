@@ -1,16 +1,82 @@
-# Hemocycle
+# 🩸 HemoCycle - Anemia Monitoring During Menstruation
 
-A new Flutter project.
+**Hackathon**: Hacksagon 2025 (National-Level Hackathon) 
+**Track**: Mobile App Development   
+**Team Name**: Pandamonium  
 
-## Getting Started
+HemoCycle is a mobile application designed to **monitor anemia during menstruation** by analyzing images of the user's lower eyelid. It empowers menstruating individuals—especially those reluctant to seek medical advice—with a **low-cost, easy-to-use, and non-invasive health monitoring solution**.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 💡 Problem Statement
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> Anemia is a widespread yet underdiagnosed health issue among menstruating women, especially in India. Excessive menstrual flow is a key cause of iron deficiency anemia, but stigma and lack of awareness prevent timely diagnosis.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Over **50% of women globally** and up to **90% in parts of India** suffer from anemia.
+- Most remain undiagnosed due to a lack of awareness, medical access, or hesitation in discussing menstrual health.
+
+---
+
+## ✅ Solution Overview
+
+HemoCycle uses image processing to analyze the inner eyelid and detect signs of anemia. It promotes **accessible self-monitoring**, especially for women in rural or underserved areas.
+
+### 🔬 Core Features:
+- Image-based monitoring of the lower eyelid for anemia indicators
+- Personalized tracking across menstrual cycles
+- Health education through curated articles
+- Offline functionality for rural accessibility
+- Privacy-focused design with minimal data requirements
+
+---
+
+## 📱 App Features
+
+- **Clean UI**: Designed for simplicity and ease of use  
+- **Home Tab**: Upload images for monitoring  
+- **Discover Tab**: Articles on menstrual and anemia-related health  
+- **Profile Tab**: Personalized data and prediction history  
+- **Low-bandwidth Optimized**: Works with minimal or no internet connectivity  
+
+---
+
+## 🧠 Tech Stack
+
+### Frontend
+- Flutter *(Cross-platform mobile development)*
+
+### Model (ML)
+- TensorFlow *(CNN-based model for eyelid image classification)*
+
+---
+
+## 🔍 Flow & Architecture
+
+1. User uploads an image of their **lower eyelid**  
+2. Image is preprocessed and analyzed by a **CNN model**  
+3. Prediction is generated (anemic/non-anemic)  
+4. Feedback and health tips are displayed to the user  
+5. Historical data is stored locally for tracking trends  
+
+---
+
+## 🌟 Novelty & Impact
+
+- Encourages health ownership among users who might avoid clinical visits  
+- Aims to **reduce stigma** and improve early detection of anemia  
+- Focused on **rural inclusion**, **low cost**, and **offline usability**  
+
+---
+
+## 👥 Team Pandamonium
+
+- [Samiksha Agarwal](https://github.com/Technomad04)  
+- [Gargi Kalia](https://github.com/Kaliagargi)  
+- [Yashasvi Jain](https://github.com/Y4shu)  
+
+---
+
+## 📷 UI Preview
+
+
+---

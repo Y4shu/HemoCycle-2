@@ -76,7 +76,52 @@ HemoCycle uses image processing to analyze the inner eyelid and detect signs of 
 
 ---
 
-## 📷 UI Preview
+## 🛠️ Local Setup Guide
+
+HemoCycle is a standalone Flutter application built entirely on the frontend, with no backend dependencies.
+
+### ✅ Requirements
+
+To run the app locally, you'll need:
+
+- [Flutter SDK 3.8.1+](https://docs.flutter.dev/get-started/install)
+- A code editor like **Android Studio** or **VS Code**
+- A connected Android/iOS **device or emulator**
+
+---
+
+### 📦 Flutter Dependencies
+
+Your app uses the following packages:
+
+| Package         | Purpose                                |
+|-----------------|----------------------------------------|
+| `flutter`       | Base SDK                               |
+| `cupertino_icons` | iOS-style icons                     |
+| `shimmer`       | Loading animations / placeholders      |
+| `lottie`        | For JSON-based animations              |
+| `flutter_lints` | Static analysis & code linting         |
+
+The app also includes:
+- **Custom font**: `DancingScript`
+- **Assets**: Lottie animation files and an avatar image
+
+---
+
+### ▶️ How to Run the App
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Y4shu/HemoCycle-2.git
+cd HemoCycle-2
+
+# 2. Get Flutter dependencies
+flutter pub get
+
+# 3. Run the app on an emulator or physical device
+flutter run
+```
+Make sure a device is connected and recognized by flutter devices.
 
 
 ---
